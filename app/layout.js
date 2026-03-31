@@ -21,19 +21,21 @@ export const metadata = {
     "minimalist tattoos", "tattoo consultation", "tattoomi", "professional tattooing",
     "tattoo portfolio", "tattoo marketplace", "ink studio"
   ],
+
   authors: [{ name: "Vishal RajDeep" }],
   creator: "Vishal RajDeep",
   publisher: "Vishal RajDeep",
-  metadataBase: new URL("https://www.tattoomi.in"),
+  metadataBase: new URL("https://tattoomi.in"),
+
   openGraph: {
     title: "TATTOOMI | Premium Tattoo Studio & Creative Ink",
     description:
       "Discover world-class tattoo artistry at TATTOOMI. From traditional ink to modern digital designs, connect with India's best tattoo creators and book your session today.",
-    url: "https://www.tattoomi.in",
+    url: "https://tattoomi.in",
     siteName: "TATTOOMI",
     images: [
       {
-        url: "/Logo.png", // Suggestion: Use a high-quality tattoo work image
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
         alt: "TATTOOMI Tattoo Studio Art",
@@ -42,12 +44,13 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "TATTOOMI | Professional Tattoo Studio",
     description:
       "Your search for the perfect tattoo ends here. TATTOOMI connects you with top-tier tattoo artists and unique custom designs. Get inked by the best.",
-    images: ["/Logo.png"],
+    images: ["/logo.jpg"],
     creator: "@RajDeepSolution",
   },
 };
