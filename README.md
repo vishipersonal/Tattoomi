@@ -4,11 +4,11 @@ tattoomi/
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.js
+│   ├── loading.js
 │   ├── page.js
 ├── components/
 │   ├── navbar/
 │   ├── ui/
-│   │   ├── loadingscreen.jsx
 ├── eslint.config.mjs
 ├── jsconfig.json
 ├── next.config.mjs
@@ -18,5 +18,3 @@ tattoomi/
 ├── public/
 │   ├── logo.jpg
 ├── README.md
-
-
