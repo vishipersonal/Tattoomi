@@ -8,7 +8,7 @@ export default function Home() {
     <div className="relative flex flex-col items-center justify-center">
       <NavBar />
       <HeroSectionDiv/>
-      <Link className="h-screen" href="/tattoos" cla>Go to Tattoos</Link>
+      <Link className="h-screen" href="/tattoos">Go to Tattoos</Link>
     </div>
   );
 }
