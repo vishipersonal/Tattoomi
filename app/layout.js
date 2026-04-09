@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import WelcomeScreen from "@/components/sections/WelcomeScreen";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,7 @@ export const metadata = {
 
   openGraph: {
     title: "TATTOOMI | Premium Tattoo Studio & Creative Ink",
-    description:"Discover world-class tattoo artistry at TATTOOMI. From traditional ink to modern digital designs, connect with India's best tattoo creators and book your session today.",
+    description: "Discover world-class tattoo artistry at TATTOOMI. From traditional ink to modern digital designs, connect with India's best tattoo creators and book your session today.",
     url: "https://tattoomi.in",
     siteName: "TATTOOMI",
     images: [
@@ -40,7 +41,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TATTOOMI | Professional Tattoo Studio",
-    description:"Your search for the perfect tattoo ends here. TATTOOMI connects you with top-tier tattoo artists and unique custom designs. Get inked by the best.",
+    description: "Your search for the perfect tattoo ends here. TATTOOMI connects you with top-tier tattoo artists and unique custom designs. Get inked by the best.",
     images: ["/logo.jpg"],
     creator: "@RajDeepSolution",
   },
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <WelcomeScreen />
         {children}
       </body>
     </html>
