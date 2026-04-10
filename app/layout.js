@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cookie, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WelcomeScreen from "@/components/sections/WelcomeScreen";
 
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const cookieFont = Cookie({
+  variable: "--font-cookie-font",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata = {
@@ -52,7 +58,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cookieFont.variable} antialiased`}
       >
         <WelcomeScreen />
         {children}

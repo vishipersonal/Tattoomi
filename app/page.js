@@ -1,5 +1,6 @@
 import NavBar from "@/components/navbar/NavBar";
 import HeroSectionDiv from "@/components/sections/HeroSectionDiv";
+import GoToTop from "@/components/ui/GoToTop";
 import Link from "next/link";
 
 
@@ -9,6 +10,7 @@ export default function Home() {
       <NavBar />
       <HeroSectionDiv/>
       <Link className="h-screen" href="/tattoos">Go to Tattoos</Link>
+      <GoToTop />
     </div>
   );
 }

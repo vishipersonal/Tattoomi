@@ -14,8 +14,8 @@ export default function HeroSectionDiv() {
         <div id="herosection" className="flex flex-col sm:flex-row w-full bg-background sm:h-screen justify-between items-center px-[5vw] py-[10vh] z-60">
             <div className='relative py-[5vh] px-[5vw] fadeInAnimation z-50'>
                 <p className='text-5xl sm:text-7xl my-5'>
-                    Find the <span className='text-[#dc143c]'>Best</span> <br />
-                    <span className='text-[#00008B]'> Tattoos </span> for <br />
+                    Find the <span className='text-violet-700'>Best</span> <br />
+                    <span className='text-rose-600 cookie-font'> Tattoos </span> for <br />
                     Your <span className='text-[#FDC5B1]'>body</span>
                 </p>
                 <p className='text-xl my-5 tracking-wider'>Because tattoos are forever</p>
