@@ -1,8 +1,10 @@
 import NavBar from "@/components/navbar/NavBar";
+import PageFooter from "@/components/navbar/PageFooter";
+import FreeConsultation from "@/components/sections/FreeConsultation";
 import HeroSectionDiv from "@/components/sections/HeroSectionDiv";
+import OurArtists from "@/components/sections/OurArtists";
 import TattooStyles from "@/components/sections/TattooStyles";
 import GoToTop from "@/components/ui/GoToTop";
-import Link from "next/link";
 
 
 export default function Home() {
@@ -11,8 +13,11 @@ export default function Home() {
       <NavBar />
       <HeroSectionDiv />
       <TattooStyles />
-      <Link className="h-screen" href="/tattoos">Go to Tattoos</Link>
+      <OurArtists />
+      <FreeConsultation />
+      <div className="relative -z-50 h-[61vh]"></div>
       <GoToTop />
+      <PageFooter />
     </div>
   );
 }
