@@ -15,7 +15,7 @@ export default function Home() {
       <TattooStyles />
       <OurArtists />
       <FreeConsultation />
-      <div className="relative -z-50 h-[61vh]"></div>
+      <div className="relative -z-50 h-[61vh] not-sm:h-screen"></div>
       <GoToTop />
       <PageFooter />
     </div>

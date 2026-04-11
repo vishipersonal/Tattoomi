@@ -10,7 +10,7 @@ export default function PageFooter() {
 
     const linkStyles = "transition-all ease-in duration-100 border-b border-amber-600 hover:border-amber-400"
     return (
-        <footer className='fixed z-10 bottom-0 left-0 w-screen h-[65vh] overflow-y-scroll overflow-hidden FooterStyles flex flex-col justify-between items-center px-[5vw] py-[7vh]'>
+        <footer className='fixed z-10 bottom-0 left-0 w-screen h-[65vh] not-sm:h-full overflow-y-scroll overflow-hidden FooterStyles flex flex-col justify-between items-center px-[5vw] py-[7vh]'>
 
             <nav className="relative sm:w-11/12 pr-1 flex sm:flex-row flex-col justify-between items-center gap-8 sm:gap-0">
 
@@ -63,8 +63,8 @@ export default function PageFooter() {
             </div>
 
             <div className='sm:w-11/12 text-stone-200 w-full flex mt-5 sm:flex-row flex-col justify-between items-center sm:gap-0 gap-5'>
-                <p className='sm:w-1/2 w-full text-start'>&copy; 2026 &mdash; TATTOOMI</p>
-                <div className='flex justify-start gap-2 items-center sm:w-1/2 w-full text-start'>Designed and Developed by <Link href="/" className='transition-all text-stone-800 hover:text-stone-950 bg-stone-200 hover:bg-stone-50 py-1 px-4 rounded-2xl'>Vishal Rajdeep</Link> </div>
+                <p className='sm:w-1/2 w-full text-start cursor-pointer' title='All rights reserved'>&copy; 2026 &mdash; TATTOOMI</p>
+                <div className='flex justify-start gap-2 items-center sm:w-1/2 w-full text-start'>Designed and Developed by <Link href="/" title='Vishal RajDeep' className='transition-all text-stone-800 hover:text-stone-950 bg-stone-200 hover:bg-stone-50 py-1 px-4 rounded-2xl'>Rajdeep</Link> </div>
             </div>
         </footer>
     )

@@ -1,7 +1,5 @@
 "use client";
-import React, { useEffect, useState } from 'react'
-import { TfiAlignJustify } from "react-icons/tfi";
-import { FaCaretUp } from "react-icons/fa";
+import React from 'react'
 import { motion } from "framer-motion";
 
 export default function FreeConsultation() {
