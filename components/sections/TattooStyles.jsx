@@ -4,6 +4,7 @@ import { TfiAlignJustify } from "react-icons/tfi";
 import { FaCaretUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function TattooStyles() {
     const [isFixed, setIsFixed] = useState(true);
@@ -73,7 +74,9 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Image width={125} height={125} src="/fineline.png" alt="Minimal and Fine Line" className='' />
+                        <Link href="/exploretattoos">
+                            <Image width={125} height={125} src="/fineline.png" alt="Minimal and Fine Line" className='' />
+                        </Link>
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -103,7 +106,9 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo" className='' />
+                        <Link href="/exploretattoos">
+                            <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo" className='' />
+                        </Link>
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -133,7 +138,9 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Image width={125} height={125} src="/realism.png" alt="Realism and Portrait" className='' />
+                        <Link href="/exploretattoos">
+                            <Image width={125} height={125} src="/realism.png" alt="Realism and Portrait" className='' />
+                        </Link>
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -163,8 +170,9 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        {/* <TfiAlignJustify className='rounded-full text-9xl' /> */}
-                        <Image width={125} height={125} src="/custom.png" alt="Custom and Creative Designs" className='' />
+                        <Link href="/exploretattoos">
+                            <Image width={125} height={125} src="/custom.png" alt="Custom and Creative Designs" className='' />
+                        </Link>
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'

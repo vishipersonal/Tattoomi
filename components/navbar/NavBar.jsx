@@ -28,7 +28,7 @@ export default function Navbar() {
     };
   }, []);
 
-  const linkStyles = "transition-all ease-in duration-100 border-b border-transparent hover:border-amber-400";
+  const linkStyles = "transition-all ease-in duration-100 border-b border-transparent hover:border-rose-600";
 
   return (
     <nav className={`fixed top-2 border border-stone-800 w-3/4 sm:w-1/2 z-100 pr-1 rounded-l-4xl rounded-r-2xl text-stone-500 font-bold flex justify-between items-center transition-all duration-300 ease-in-out bg-[#12121221] ${scrollingDown ? "-translate-y-[125%]" : "translate-y-0"}`}>

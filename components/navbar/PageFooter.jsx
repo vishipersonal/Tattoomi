@@ -8,7 +8,7 @@ import { GoArrowRight } from "react-icons/go";
 
 export default function PageFooter() {
 
-    const linkStyles = "transition-all ease-in duration-100 border-b border-amber-600 hover:border-amber-400"
+    const linkStyles = "transition-all ease-in duration-100 border-b border-rose-600 hover:border-rose-400"
     return (
         <footer className='fixed z-10 bottom-0 left-0 w-screen h-[65vh] not-sm:h-svh overflow-y-scroll overflow-hidden FooterStyles flex flex-col justify-between items-center px-[5vw] py-[7vh]'>
 
@@ -20,7 +20,7 @@ export default function PageFooter() {
 
                 <div className='relative 2xl:w-1/2 flex justify-between items-center gap-4 flex-wrap text-xl'>
                     <Link className={linkStyles} href="#artists">Artists</Link>
-                    <Link className={linkStyles} href="#designs">Tattoo Designs</Link>
+                    <Link className={linkStyles} href="/exploretattoos">Tattoo Designs</Link>
                     <Link className={linkStyles} href="#latest-ink">Latest Ink</Link>
                     <Link className={linkStyles} href="#booking">Book Session</Link>
                     <Link className={linkStyles} href="#flash">Flash Tattoos</Link>
@@ -42,9 +42,9 @@ export default function PageFooter() {
 
                     <div className='sm:w-1/2 w-full flex justify-between items-center'>
                         <div className='flex flex-col justify-start items-start gap-2'>
-                            <Link href="/about" className='hover:font-semibold border-b border-amber-600 transition-all ease-in-out'>About</Link>
-                            <Link href="/about#careers" className='hover:font-semibold border-b border-amber-600 transition-all ease-in-out'>Careers</Link>
-                            <Link href="/about#contact" className='hover:font-semibold border-b border-amber-600 transition-all ease-in-out'>Contact</Link>
+                            <Link href="/about" className='hover:font-semibold border-b border-rose-600 transition-all ease-in-out'>About</Link>
+                            <Link href="/about#careers" className='hover:font-semibold border-b border-rose-600 transition-all ease-in-out'>Careers</Link>
+                            <Link href="/about#contact" className='hover:font-semibold border-b border-rose-600 transition-all ease-in-out'>Contact</Link>
                         </div>
 
                         <div className='flex flex-col relative justify-start pb-8 items-start gap-2'>
