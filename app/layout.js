@@ -34,7 +34,7 @@ export const metadata = {
     siteName: "TATTOOMI",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/Logo.jpg",
         width: 1200,
         height: 630,
         alt: "TATTOOMI Tattoo Studio Art",
@@ -48,7 +48,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "TATTOOMI | Professional Tattoo Studio",
     description: "Your search for the perfect tattoo ends here. TATTOOMI connects you with top-tier tattoo artists and unique custom designs. Get inked by the best.",
-    images: ["/logo.jpg"],
+    images: ["/Logo.jpg"],
     creator: "@RajDeepSolution",
   },
 };
