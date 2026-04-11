@@ -40,7 +40,6 @@ export const metadata = {
 };
 
 export default function ExploreTattoos() {
-    
     const images = [1, 2, 3];
 
     return (
