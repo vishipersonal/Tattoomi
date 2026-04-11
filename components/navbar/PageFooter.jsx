@@ -10,7 +10,7 @@ export default function PageFooter() {
 
     const linkStyles = "transition-all ease-in duration-100 border-b border-amber-600 hover:border-amber-400"
     return (
-        <footer className='fixed z-10 bottom-0 left-0 w-screen h-[65vh] not-sm:h-full overflow-y-scroll overflow-hidden FooterStyles flex flex-col justify-between items-center px-[5vw] py-[7vh]'>
+        <footer className='fixed z-10 bottom-0 left-0 w-screen h-[65vh] not-sm:h-svh overflow-y-scroll overflow-hidden FooterStyles flex flex-col justify-between items-center px-[5vw] py-[7vh]'>
 
             <nav className="relative sm:w-11/12 pr-1 flex sm:flex-row flex-col justify-between items-center gap-8 sm:gap-0">
 
