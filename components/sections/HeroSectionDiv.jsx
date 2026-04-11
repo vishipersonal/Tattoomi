@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import React, { useState } from 'react'
-import JoinNowButton from '../ui/JoinNowButton';
+import BookNowButton from '../ui/BookNowButton';
 
 export default function HeroSectionDiv() {
     const [showForm, setShowForm] = useState(false);
@@ -21,7 +21,7 @@ export default function HeroSectionDiv() {
                     Your <span className='text-blue-950 cookie-font'>body</span>
                 </p>
                 <p className='text-xl my-5 tracking-wider'>Because tattoos are forever</p>
-                <JoinNowButton toggleJoinForm={toggleJoinForm} />
+                <BookNowButton toggleJoinForm={toggleJoinForm} />
             </div>
 
             <div className=' flex justify-center items-end sm:border border-y h-full p-10 sm:p-15 rounded-2xl'>

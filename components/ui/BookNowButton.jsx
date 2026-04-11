@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function JoinNowButton({toggleJoinForm}) {
+export default function BookNowButton({toggleJoinForm}) {
 
     return (
 
