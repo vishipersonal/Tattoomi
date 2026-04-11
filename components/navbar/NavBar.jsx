@@ -36,7 +36,7 @@ export default function Navbar() {
         <Image width={50} height={50} src="/navlogo.png" alt="Knowledge Cloud Logo" className='absolute transition-all hover:scale-110' />
       </Link>
       <div className='hidden relative sm:flex justify-center items-center gap-3'>
-        <Link className={linkStyles} href="/#faculty">Tattoos</Link>
+        <Link className={linkStyles} href="/exploretattoos">Tattoos</Link>
         <Link className={linkStyles} href="/#courses">Artists</Link>
         <Link className={linkStyles} href="/#quizz">About</Link>
       </div>

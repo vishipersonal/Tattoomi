@@ -7,7 +7,7 @@ export default function JoinNowButton({toggleJoinForm}) {
         <>
             <button
                 onClick={toggleJoinForm}
-                className='px-6 py-3 rounded-full transition-all ease hover:bg-[#dc143c] bg-[#dc143c9c] text-stone-200 hover:text-stone-50 '>
+                className='px-6 py-3 rounded-full transition-all ease hover:bg-rose-700 bg-rose-600 text-stone-200 hover:text-stone-50 '>
                 Boook Appointment
             </button>
             

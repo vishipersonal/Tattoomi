@@ -73,7 +73,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Image width={125} height={125} src="/fineline.png" alt="NIOS Logo" className='' />
+                        <Image width={125} height={125} src="/fineline.png" alt="Minimal and Fine Line" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -103,7 +103,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo-Traditional" className='' />
+                        <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -112,7 +112,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Traditional & Neo-Traditional
+                        Traditional & Neo
                     </motion.h3>
                     <motion.p
                         className='sm:text-xl text-sm font-bold text-start text-stone-600'
@@ -173,7 +173,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Custom & Creative Designs
+                        Custom & Creative
                     </motion.h3>
                     <motion.p
                         className='sm:text-xl text-sm font-bold text-start text-stone-600'

@@ -1,8 +1,7 @@
-// app/loading.js
+import WelcomeScreen from "@/components/sections/WelcomeScreen";
+
 export default function Loading() {
   return (
-    <div className="h-screen min-w-screen flex items-center justify-center">
-      <p>Loading...</p>
-    </div>
+    <WelcomeScreen />
   );
 }
