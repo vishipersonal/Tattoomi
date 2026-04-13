@@ -47,16 +47,23 @@ export default function PageFooter() {
                             <Link href="/about#contact" className='hover:font-semibold border-b border-rose-600 transition-all ease-in-out'>Contact</Link>
                         </div>
 
-                        <div className='flex flex-col relative justify-start pb-8 items-start gap-2'>
-                            <p className=''>821-882-2812</p>
-                            <p className=''>tattoomistudio@gmail.com</p>
+                        <div className='flex flex-col relative justify-start items-start gap-1'>
+                            <a href="tel:+918218822812">821-882-2812</a>
+                            <a href="mailto:tattoomistudio@gmail.com">tattoomistudio@gmail.com</a>
+                            <address className='text-sm text-wrap border-y'>M-10 3rd Floor, M Block Market, <br /> Greater Kailash, New Delhi</address>
                         </div>
                     </div>
 
                     <div className='sm:w-1/2 flex justify-end items-center gap-5 text-4xl'>
-                        <FaXTwitter />
-                        <FaFacebook />
-                        <FaLinkedin />
+                        <Link href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <FaFacebook />
+                        </Link>
+                        <Link href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <FaXTwitter />
+                        </Link>
+                        <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin />
+                        </Link>
                     </div>
                 </div>
 

@@ -20,7 +20,7 @@ export const metadata = {
         siteName: "TATTOOMI",
         images: [
             {
-                url: "/finelinebg.png",
+                url: "/Logo.jpg",
                 width: 1200,
                 height: 630,
                 alt: "TATTOOMI Tattoo Studio Art",
@@ -34,7 +34,7 @@ export const metadata = {
         card: "summary_large_image",
         title: "TATTOOMI | Explore Unique Tattoo Designs & Artist Portfolios",
         description: "Discover a curated collection of unique tattoo designs and artist portfolios at TATTOOMI. Find your next favorite piece and connect with India's top tattoo artists.",
-        images: ["/finelinebg.png"],
+        images: ["/Logo.jpg"],
         creator: "@RajDeepSolution",
     },
 };

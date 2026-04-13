@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import { TfiAlignJustify } from "react-icons/tfi";
 import { FaCaretUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from 'next/image';
@@ -66,7 +65,7 @@ export default function TattooStyles() {
 
             <div className='relative w-full flex flex-wrap justify-center items-center'>
 
-                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start FineLineBg sm:px-15 px-10 pt-10 pb-15'>
+                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 FineLineBg items-start sm:px-15 px-10 pt-10 pb-15'>
                     <motion.div
                         className='flex justify-center items-center sm:self-start self-center'
                         initial={{ opacity: 0, y: 50 }}
@@ -74,9 +73,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Link href="/exploretattoos">
-                            <Image width={125} height={125} src="/fineline.png" alt="Minimal and Fine Line" className='' />
-                        </Link>
+                        <Image width={125} height={125} src="/fineline.png" alt="Minimal and Fine Line" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -85,10 +82,10 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Minimal & Fine Line
+                        <Link href="/exploretattoos">Minimal & Fine Line</Link>
                     </motion.h3>
                     <motion.p
-                        className='sm:text-xl text-sm font-bold text-start text-stone-600'
+                        className='sm:text-xl text-sm text-start text-stone-950 text-shadow-stone-50 text-shadow-sm italic'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -98,7 +95,7 @@ export default function TattooStyles() {
                     </motion.p>
                 </div>
 
-                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start NeoBg sm:px-15 px-10 pt-10 pb-15'>
+                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start sm:px-15 px-10 pt-10 pb-15'>
                     <motion.div
                         className='flex flex-col justify-center items-center sm:self-start self-center'
                         initial={{ opacity: 0, y: 50 }}
@@ -106,9 +103,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Link href="/exploretattoos">
-                            <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo" className='' />
-                        </Link>
+                        <Image width={125} height={125} src="/neo.png" alt="Traditional and Neo" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -117,10 +112,10 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Traditional & Neo
+                        <Link href="/exploretattoos">Traditional & Neo</Link>
                     </motion.h3>
                     <motion.p
-                        className='sm:text-xl text-sm font-bold text-start text-stone-600'
+                        className='sm:text-xl text-sm text-start text-stone-950 text-shadow-stone-50 text-shadow-sm italic'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -138,9 +133,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Link href="/exploretattoos">
-                            <Image width={125} height={125} src="/realism.png" alt="Realism and Portrait" className='' />
-                        </Link>
+                        <Image width={125} height={125} src="/realism.png" alt="Realism and Portrait" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -149,10 +142,10 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Realism & Portrait
+                        <Link href="/exploretattoos">Realism & Portrait</Link>
                     </motion.h3>
                     <motion.p
-                        className='sm:text-xl text-sm font-bold text-start text-stone-600'
+                        className='sm:text-xl text-sm text-start text-stone-950 text-shadow-stone-50 text-shadow-sm italic'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -170,9 +163,7 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        <Link href="/exploretattoos">
-                            <Image width={125} height={125} src="/custom.png" alt="Custom and Creative Designs" className='' />
-                        </Link>
+                        <Image width={125} height={125} src="/custom.png" alt="Custom and Creative Designs" className='' />
                     </motion.div>
                     <motion.h3
                         className='sm:text-5xl text-4xl text-start font-bold'
@@ -181,10 +172,10 @@ export default function TattooStyles() {
                         viewport={{ once: true, amount: 0.2 }}
                         transition={{ duration: 0.7, ease: "easeOut" }}
                     >
-                        Custom & Creative
+                        <Link href="/exploretattoos">Custom & Creative</Link>
                     </motion.h3>
                     <motion.p
-                        className='sm:text-xl text-sm font-bold text-start text-stone-600'
+                        className='sm:text-xl text-sm text-start text-stone-950 text-shadow-stone-50 text-shadow-sm italic'
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
