@@ -50,6 +50,9 @@ export default function PageFooter() {
                         <div className='flex flex-col relative justify-start items-start gap-1'>
                             <a href="tel:+918218822812">821-882-2812</a>
                             <a href="mailto:tattoomistudio@gmail.com">tattoomistudio@gmail.com</a>
+                            {/* <a href="mailto:tattoomistudio@gmail.com?subject=Tattoo%20Booking&body=Hello%20Team,%0AI%20want%20to%20book%20a%20tattoo.%0APlease%20share%20details.">
+                                Book Now
+                            </a> */}
                             <address className='text-sm text-wrap border-y'>M-10 3rd Floor, M Block Market, <br /> Greater Kailash, New Delhi</address>
                         </div>
                     </div>
