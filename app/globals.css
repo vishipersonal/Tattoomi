@@ -212,3 +212,15 @@ body {
 .topperCard:hover .topperimageBg {
   transform: scale(1.05);
 }
+
+.FineLineBg {
+  background-image: url('/finelinebg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/* .NeoBg {
+  background-image: url('/neobg.jpg');
+  background-position: center;
+  background-size: cover;
+} */

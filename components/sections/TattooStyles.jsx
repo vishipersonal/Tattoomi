@@ -66,7 +66,7 @@ export default function TattooStyles() {
 
             <div className='relative w-full flex flex-wrap justify-center items-center'>
 
-                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start sm:px-15 px-10 pt-10 pb-15'>
+                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start FineLineBg sm:px-15 px-10 pt-10 pb-15'>
                     <motion.div
                         className='flex justify-center items-center sm:self-start self-center'
                         initial={{ opacity: 0, y: 50 }}
@@ -98,7 +98,7 @@ export default function TattooStyles() {
                     </motion.p>
                 </div>
 
-                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start sm:px-15 px-10 pt-10 pb-15'>
+                <div className='sm:w-2/5 w-full flex flex-col justify-canter sm:gap-10 gap-7 items-start NeoBg sm:px-15 px-10 pt-10 pb-15'>
                     <motion.div
                         className='flex flex-col justify-center items-center sm:self-start self-center'
                         initial={{ opacity: 0, y: 50 }}
