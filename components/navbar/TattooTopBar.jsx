@@ -1,46 +1,71 @@
 "use client";
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { CiSearch } from "react-icons/ci";
 
-export default function TattooTopBar() {
-    const [scrollingDown, setScrollingDown] = useState(false);
-    useEffect(() => {
-        let lastScrollY = window.scrollY;
+const TattooTopBar = ({ query, setQuery }) => {
+  const [scrollingDown, setScrollingDown] = useState(false);
+  const inputRef = useRef(null);
+  const router = useRouter();
 
-        const handleScroll = () => {
-            if (window.scrollY > lastScrollY && window.scrollY > 50) {
-                setScrollingDown(true);
-            } else {
-                setScrollingDown(false);
-            }
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
 
-            lastScrollY = window.scrollY;
-        };
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY && window.scrollY > 50) {
+        setScrollingDown(true);
+      } else {
+        setScrollingDown(false);
+      }
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
+      lastScrollY = window.scrollY;
+    };
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-    return (
-        <div className={`sticky top-0 left-0 w-svw sm:w-screen px-1 py-2 bg-[var(--background)] text-[var(--foreground)] z-10 rounded-b-2xl transition-all duration-300 ease-in ${scrollingDown ? "-translate-y-[125%]" : "translate-y-0"}`}>
-            <div className='relative w-full sm:w-1/2 mx-auto shadow-inner shadow-stone-500 rounded-4xl p-2 flex justify-start items-center gap-2 overflow-x-scroll overflow-y-hidden flex-nowrap'>
-                <div className='relative shrink-0 p-0.5 bg-transparent rounded-full flex justify-center items-center overflow-hidden shadow shadow-stone-500 mr-2'>
-                    <Link href="/" title='Go to Home'>
-                        <Image width={75} height={75} priority src="/Logo.jpg" alt="Self Profile" className='relative rounded-full dark:invert' />
-                    </Link>
-                </div>
+    window.addEventListener("scroll", handleScroll);
 
-                <div title='Artist of the Month' className='relative shrink-0 p-0.5 bg-rose-500 rounded-full flex justify-center items-center overflow-hidden shadow shadow-stone-500'>
-                    <Image width={75} height={75} priority src="/Logo.jpg" alt="Self Profile" className='relative rounded-full' />
-                </div>
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-                <div title='Tattoo of the Month' className='relative shrink-0 p-0.5 bg-transparent rounded-full flex justify-center items-center overflow-hidden shadow shadow-stone-500'>
-                    <Image width={75} height={75} priority src="/Logo.jpg" alt="Self Profile" className='relative rounded-full' />
-                </div>
-            </div>
-        </div>
-    )
-}
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!query.trim()) return;
+
+    if (query.startsWith("@")) {
+      // remove spaces & redirect to /@username
+      const username = query.replace(/\s+/g, "");
+      router.push(`/${username}`);
+    } else {
+      // normal search -> just update query state (feeds API will handle it)
+      setQuery(query);
+    }
+  };
+
+  return (
+    <div className={`fixed top-0 z-20 w-svw sm:w-screen transition-all duration-300 ease-in ${scrollingDown ? "-translate-y-[125%]" : "translate-y-0"}`}>
+      <form
+        onSubmit={handleSearch}
+        className="relative flex items-center justify-center backdrop-blur-xl shadow shadow-stone-800 rounded-4xl px-3 py-2 my-2 mx-auto max-w-sm w-10/12"
+      >
+        <input
+          ref={inputRef}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          type="search"
+          placeholder="Search tattoos or @artists..."
+          className="transition-all duration-300 shadow-inner shadow-stone-800 ease-in origin-left text-lg rounded-2xl outline-none w-full px-2.5 mr-1"
+        />
+        <button
+          type="submit"
+          aria-label="Search"
+          className="relative text-2xl rounded-2xl"
+        >
+          <CiSearch />
+        </button>
+      </form>
+    </div>
+  );
+};
+
+export default TattooTopBar;
