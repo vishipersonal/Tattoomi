@@ -1,3 +1,4 @@
+import AppPagesFooter from "@/components/navbar/AppPagesFooter";
 
 export const metadata = {
     title: "TATTOOMI | Explore Unique Tattoo Designs & Artist Portfolios",
@@ -38,6 +39,8 @@ export default function Layout({ children }) {
     return (
         <>
             {children}
+            {/* <AppPagesFooter session={session} /> */}
+            <AppPagesFooter />
         </>
     );
 }
