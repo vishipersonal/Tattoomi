@@ -1,11 +1,12 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import { CiChat2, CiShop, CiUser } from 'react-icons/ci';
-import { GiCottonFlower } from 'react-icons/gi';
+import { CiShop, CiUser } from 'react-icons/ci';
+import { FcLike } from "react-icons/fc";
+import { MdEvent } from "react-icons/md";
 import Link from 'next/link';
 import { redirect, usePathname } from 'next/navigation';
 
-const pathToKey = { "/": "Home", "/user/userpage": "User", "/signin": "User", "/registration": "User", "/collection": "Collections", "/chat": "Chat" };
+const pathToKey = { "/": "Home", "/user/userpage": "User", "/tattoomisignin": "User", "/registration": "User", "/savedtattoos": "Saved Tattoos", "/appointments": "Appointments" };
 
 const buttonClass = "relative text-center shadow-stone-500 text-4xl p-0.5 rounded-xl transition-all duration-150 ease-in hover:scale-105 active:scale-95 active:shadow-inner"
 
@@ -45,9 +46,9 @@ const AppPagesFooter = ({ session }) => {
 
     const buttonMeta = [
         { Icon: CiShop, label: "Home", title: "Home", key: "Home", href: "/" },
-        { Icon: GiCottonFlower, label: "Collections", title: "Collections", key: "Collections", href: "/collection" },
-        { Icon: CiChat2, label: "Chat", title: "Chat", key: "Chat", href: "/chat" },
-        { Icon: CiUser, label: "User", title: "User", key: "User", href: `${session ? "/userpage" : "/signin"}` },
+        { Icon: FcLike, label: "Saved Tattoos", title: "Saved Tattoos", key: "savedtattoos", href: "/savedtattoos" },
+        { Icon: MdEvent, label: "Appointments", title: "Appointments", key: "Appointments", href: "/appointments" },
+        { Icon: CiUser, label: "User", title: "User", key: "User", href: `${session ? "/userpage" : "/tattoomisignin"}` },
     ];
 
     return (
