@@ -1,3 +1,4 @@
+import { auth } from "@/auth";
 import AppPagesFooter from "@/components/navbar/AppPagesFooter";
 
 export const metadata = {
@@ -35,12 +36,12 @@ export const metadata = {
     },
 };
 
-export default function Layout({ children }) {
+export default async function Layout({ children }) {
+    const session = await auth();
     return (
         <>
             {children}
-            {/* <AppPagesFooter session={session} /> */}
-            <AppPagesFooter />
+            <AppPagesFooter session={session} />
         </>
     );
 }
