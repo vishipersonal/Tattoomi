@@ -29,7 +29,7 @@ const SignInForm = () => {
                     {text} <Icon className="text-xl" />
                 </button>
             ))}
-            <p className='relative w-full px-8'>Are you an Artist? <Link href="/registration" className="underline italic">Click here</Link> to create your Artist Account now.</p>
+            <p className='relative w-full px-8'>Are you an Artist? <Link href="/tattoomiregistration" className="underline italic" title='Go to Registration Page'>Click here</Link> to create your Artist Account now.</p>
         </form>
     )
 }
