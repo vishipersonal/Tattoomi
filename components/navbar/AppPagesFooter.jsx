@@ -12,7 +12,7 @@ const buttonClass = "relative text-center shadow-stone-500 text-4xl p-0.5 rounde
 
 
 
-const AppPagesFooter = ({ session }) => {   
+const AppPagesFooter = ({ session }) => {
     const pathname = usePathname();
     const [activeIndex, setActiveIndex] = useState(null);
     const [scrollingDown, setScrollingDown] = useState(false);
@@ -37,19 +37,21 @@ const AppPagesFooter = ({ session }) => {
             lastScrollY = window.scrollY;
         };
 
-        window.addEventListener("scroll", handleScroll, {passive: true});
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
-    const buttonMeta = [
+    const allButtons = [
         { Icon: CiShop, label: "Home", title: "Home", key: "Home", href: "/" },
-        { Icon: FcLike, label: "Saved Tattoos", title: "Saved Tattoos", key: "savedtattoos", href: "/savedtattoos" },
-        { Icon: MdEvent, label: "Appointments", title: "Appointments", key: "Appointments", href: "/appointments" },
-        { Icon: CiUser, label: "User", title: "User", key: "User", href: `${session ? "/userpage" : "/tattoomisignin"}` },
+        { Icon: FcLike, label: "Saved Tattoos", title: "Saved Tattoos", key: "savedtattoos", href: "/savedtattoos", auth: true },
+        { Icon: MdEvent, label: "Appointments", title: "Appointments", key: "Appointments", href: "/appointments", auth: true },
+        { Icon: CiUser, label: "User", title: "User", key: "User", href: session ? "/userpage" : "/tattoomisignin" },
     ];
+
+    const buttonMeta = allButtons.filter(btn => !btn.auth || session);
 
     return (
         <div className={`fixed bottom-0 left-0 w-svw sm:w-screen px-1 py-2 bg-[var(--background)] text-[var(--foreground)] z-0 rounded-t-2xl transition-all duration-300 ease-in ${scrollingDown ? "translate-y-[125%]" : "translate-y-0"}`}>

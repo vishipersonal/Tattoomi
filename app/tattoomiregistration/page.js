@@ -15,8 +15,8 @@ export default async function TattoomiRegistrationPage() {
       <div className='relative w-full shadow-inner shadow-stone-500 rounded-4xl overflow-x-hidden p-2 flex flex-col justify-center items-center'>
 
         <div className='relative flex justify-center items-center w-full max-w-2xs my-5'>
-          <h1 className='relative text-5xl sm:text-6xl text-shadow-sm tracking-widest text-shadow-stone-500 border-b'>Cottonfall</h1>
-          <p className='absolute bottom-0 right-0 text-sm translate-x-1/8 italic font-light text-shadow-sm text-shadow-stone-500 translate-y-full'>Where Creativity Meets Opportunity</p>
+          <h1 className='relative text-5xl sm:text-6xl text-shadow-sm tracking-widest text-shadow-stone-500 border-b'>TATTOOMI</h1>
+          <p className='absolute bottom-0 right-0 text-sm translate-x-1/8 italic font-light text-shadow-sm text-shadow-stone-500 translate-y-full'>Where Creativity Meets Talent</p>
         </div>
 
         <div className='relative w-full flex justify-center items-center my-2'>
